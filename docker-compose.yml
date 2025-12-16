@@ -26,5 +26,4 @@ services:
       - ./spark-events:/tmp/spark-events
     environment:
       - JUPYTER_TOKEN=lab
-    # Remove the complex command - use the default startup
     command: start-notebook.sh --NotebookApp.token=lab
