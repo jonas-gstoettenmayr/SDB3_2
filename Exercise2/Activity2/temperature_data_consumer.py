@@ -1,7 +1,7 @@
 import time
 from datetime import datetime, timedelta
-import psycopg2
-from psycopg2 import sql
+import psycopg
+from psycopg import sql
 
 # -------------------------
 # Periodically compute average over last 10 minutes
@@ -9,7 +9,7 @@ from psycopg2 import sql
 DB_NAME = "office_db"
 DB_USER = "postgres"
 DB_PASSWORD = "postgrespw"
-DB_HOST = "localhost"
+DB_HOST = "127.0.0.1"
 DB_PORT = 5432
 DB_TABLE = "temperature_readings"
 try:
@@ -18,7 +18,7 @@ try:
         ## Fetch the data from the choosen source (to be implemented)
 
         result = []
-        with psycopg2.connect(
+        with psycopg.connect(
             dbname=DB_NAME,  # default DB
             user=DB_USER,
             password=DB_PASSWORD,
