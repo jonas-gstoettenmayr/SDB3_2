@@ -1,6 +1,6 @@
 # Exercise 2 - Jonas Gstöttenmayr
 
-To see the code: https://github.com/jonas-gstoettenmayr/SDB3_2/tree/main/Exercise2
+To see the code: <https://github.com/jonas-gstoettenmayr/SDB3_2/tree/main/Exercise2>
 
 ## Activitiy 1
 
