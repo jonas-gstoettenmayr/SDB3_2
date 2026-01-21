@@ -98,7 +98,12 @@ My particual solution handles late records through a 10s watermark, meaning it w
 
 *Furthermore, you must provide a performance and scalability report that evaluates the performance and efficiency of your solution and discuss its ability to execute effectively across a multi-machine environment.*
 
-The 10 second watermark is rather short so it should not take up to much memory and I have already set it to have more partitions and setting the amount of tasks (at least for this rather small data down from 200 to only the 8 of the cores we have available) whic massivly increases performance. This is also a bit of a prove of concept as a lot of the time used for the tasks is the processing, so scaling more machines can still improve performance.
+The 10 second watermark is rather short so it should not take up to much memory and I have already set it to have more partitions and setting the amount of tasks (at least for this rather small data down from 200 to only the 8 of the cores we have available) which massivly increases performance. This is also a bit of a prove of concept as a lot of the time used for the tasks is the processing, so scaling more machines can still improve performance.
+
+The Performance was majorly better than the previous exercise but the configuration was also changed as it was able to read in the data with 8 more cores instead of 1, because as advised durring the lession the amount of kafka partitions was changed to 8.
+![alt text](images/A3Performance.png)
+
+![alt text](images/A3_more_performance.png)
 
 Which leads to the next point scalability, as discussed in the previous part already it is quite scalable.
 

@@ -2,3 +2,4 @@
 spark-events
 *.zip
 .venv
+*.pdf
