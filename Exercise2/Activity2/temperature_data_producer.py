@@ -8,10 +8,11 @@ from psycopg import sql
 DB_NAME = "office_db"
 DB_USER = "postgres"
 DB_PASSWORD = "postgrespw"
-DB_HOST = "localhost"
+DB_HOST = "127.0.0.1"
 DB_PORT = 5432
 
 # Step 1: Connect to default database
+print("connecting to postgres")
 with psycopg.connect(
     dbname="postgres",
     user=DB_USER,
@@ -22,6 +23,7 @@ with psycopg.connect(
 ) as conn:
 
     with conn.cursor() as cursor:
+
         cursor.execute(
             "SELECT 1 FROM pg_database WHERE datname = %s",
             (DB_NAME,)
@@ -38,6 +40,7 @@ with psycopg.connect(
             print(f"Database {DB_NAME} already exists.")
 
 # Step 2: Connect to the target database
+print("connecting to office_db")
 with psycopg.connect(
     dbname=DB_NAME,
     user=DB_USER,

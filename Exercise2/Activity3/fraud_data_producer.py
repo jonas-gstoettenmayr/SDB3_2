@@ -27,7 +27,7 @@ def setup_db():
             """)
             conn.commit()
 
-def generate_data(batch_size=1000):
+def generate_data(batch_size=2):
     insert_sql = """
         INSERT INTO transactions
         (user_id, amount, card_type, merchant_id)
@@ -51,7 +51,7 @@ def generate_data(batch_size=1000):
                 conn.commit()
 
                 print(f"{datetime.now()} - Inserted {batch_size} transactions")
-                time.sleep(0.5)
+                time.sleep(1)
 
 if __name__ == "__main__":
     setup_db()
