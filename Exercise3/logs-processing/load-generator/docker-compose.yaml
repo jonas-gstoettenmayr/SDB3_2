@@ -8,7 +8,7 @@ services:
       - KAFKA_TOPIC=logs
       - TARGET_RPS=250000
       - ADDITIONAL_TERM=crash
-      - ADDITIONAL_TERM_RATE=100
+      - ADDITIONAL_TERM_RATE=1000
     deploy:
       replicas: 4  # This enables to run more instances (containers)
       resources:
