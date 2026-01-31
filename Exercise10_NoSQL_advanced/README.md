@@ -1,11 +1,6 @@
-one or two paragraphs
-
-build an index for better performance
-
-largest performance hit is in REGEX vulnerability - text search index (Full Text Search index)
-https://docs.pinot.apache.org/basics/indexing/text-search-support#enable-a-per-column-text-index
-
 # EX 10 - Jonas Gstoettenmayr
+
+Also readable under: https://github.com/jonas-gstoettenmayr/SDB3_2/tree/main/Exercise10_NoSQL_advanced
 
 ## Questions
 

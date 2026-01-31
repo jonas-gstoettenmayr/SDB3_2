@@ -1,6 +1,6 @@
 # EX 10 - Jonas Gstoettenmayr
 
-Also readable under: 
+Also readable under: https://github.com/jonas-gstoettenmayr/SDB3_2/tree/main/Exercise10_NoSQL_advanced
 
 ## Questions
 
